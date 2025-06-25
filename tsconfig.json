@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@server/*": ["./src/*"]
+    }
+  },
+  "exclude": ["**/node_modules"],
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules"]
+  }
+}

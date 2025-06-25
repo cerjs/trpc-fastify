@@ -1,0 +1,21 @@
+{
+  "name": "trpc-fastify",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/server.ts",
+  "scripts": {
+    "start": "pnpm dev",
+    "dev": "tsx watch src/server",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@trpc/server": "^11.4.2",
+    "fastify": "^5.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "esbuild": "^0.25.5",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

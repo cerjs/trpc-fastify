@@ -1,0 +1,21 @@
+import { fastifyTRPCPlugin } from '@trpc/server/adapters/fastify';
+import fastify from 'fastify';
+
+import appRouter from './routers/_app';
+import { createContext } from './utils/context';
+
+const server = fastify();
+
+server.register(fastifyTRPCPlugin, {
+  prefix: '/api/trpc',
+  trpcOptions: { router: appRouter, createContext },
+});
+
+(async () => {
+  try {
+    await server.listen({ port: 3001 });
+  } catch (err) {
+    server.log.error(err);
+    process.exit(1);
+  }
+})();
