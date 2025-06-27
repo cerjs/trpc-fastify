@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@trpc/server':
-        specifier: ^11.4.2
-        version: 11.4.2(typescript@5.8.3)
+        specifier: ^11.4.3
+        version: 11.4.3(typescript@5.8.3)
       fastify:
         specifier: ^5.4.0
         version: 5.4.0
@@ -198,8 +198,8 @@ packages:
   '@fastify/proxy-addr@5.0.0':
     resolution: {integrity: sha512-37qVVA1qZ5sgH7KpHkkC4z9SK6StIsIcOmpjvMPXNb3vx2GQxhZocogVYbr2PbbeLCQxYIPDok307xEvRZOzGA==}
 
-  '@trpc/server@11.4.2':
-    resolution: {integrity: sha512-THyq/V5bSFDHeWEAk6LqHF0IVTGk6voGwWsFEipzRRKOWWMIZINCsKZ4cISG6kWO2X9jBfMWv/S2o9hnC0zQ0w==}
+  '@trpc/server@11.4.3':
+    resolution: {integrity: sha512-wnWq3wiLlMOlYkaIZz+qbuYA5udPTLS4GVVRyFkr6aT83xpdCHyVtURT+u4hSoIrOXQM9OPCNXSXsAujWZDdaw==}
     peerDependencies:
       typescript: '>=5.7.2'
 
@@ -480,7 +480,7 @@ snapshots:
       '@fastify/forwarded': 3.0.0
       ipaddr.js: 2.2.0
 
-  '@trpc/server@11.4.2(typescript@5.8.3)':
+  '@trpc/server@11.4.3(typescript@5.8.3)':
     dependencies:
       typescript: 5.8.3
 

@@ -11,6 +11,14 @@ server.register(fastifyTRPCPlugin, {
   trpcOptions: { router: appRouter, createContext },
 });
 
+// fastify router
+server.get('/api/fastify', (req, res) => {
+  res.send({
+    "result": {
+    "data": "Hello fastify"
+    }
+  });
+});
 
 const start = async () => {
   try {
