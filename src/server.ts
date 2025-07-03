@@ -12,7 +12,7 @@ server.register(fastifyTRPCPlugin, {
 });
 
 // fastify router
-server.get('/api/fastify', (req, res) => {
+server.get('/api/json', (req, res) => {
   res.send({
     "result": {
     "data": "Hello fastify"
